@@ -226,6 +226,18 @@ class SiteController extends MainController
 	}
 
 	/**
+	 * Displays the branches page: each branch with its details and map.
+	 *
+	 * @return mixed
+	 */
+	public function actionBranch()
+	{
+		return $this->render('branch', [
+			'branches' => \common\models\Branch::findAllBranches(),
+		]);
+	}
+
+	/**
 	 * Displays membership page and handles form submissions.
 	 *
 	 * @param string|null $type

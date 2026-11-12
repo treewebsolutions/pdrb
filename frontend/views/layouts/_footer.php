@@ -120,6 +120,14 @@ use yii\widgets\ActiveForm;
 										</p>
 									</li>
 								<?php endif; ?>
+								<?php if (\common\models\Branch::findAllBranches() && ($branchPage = \common\models\Page::findPageByRoute(['site/branch']))): ?>
+									<li>
+										<p>
+											<i class="fas fa-map-marker-alt"></i>
+											<?= Html::a(Html::encode($branchPage->translation->title ?: Yii::t('common', 'Branches')), ['/site/branch']) ?>
+										</p>
+									</li>
+								<?php endif; ?>
 							</ul>
 						</div>
 					</div>

@@ -69,6 +69,7 @@ class Module extends \yii\base\Module implements \yii\base\BootstrapInterface
 			'roles' => [
 				'updateGeneralSetting', 'updateEmailSetting', 'updateContactSetting', 'updateSocialNetworksSetting',
                 'updateSeoSetting', 'viewLanguageSetting', 'viewCurrencySetting', 'clearCacheSetting',
+				'viewBranch',
 			],
 			'icon' => 'icon-settings',
 			'label' => Yii::t('common', 'Settings'),
@@ -115,6 +116,12 @@ class Module extends \yii\base\Module implements \yii\base\BootstrapInterface
 					'icon' => 'fa fa-circle-o',
 					'label' => Yii::t('common', 'Contact'),
 					'url' => ['/setting-manager/setting/contact'],
+				],
+				[
+					'roles' => ['viewBranch'],
+					'icon' => 'fa fa-circle-o',
+					'label' => Yii::t('common', 'Branches'),
+					'url' => ['/setting-manager/branch/index'],
 				],
 				[
 					'roles' => ['viewLanguageSetting'],

@@ -215,6 +215,18 @@ $this->params['breadcrumbs'][] = Html::encode($this->title);
 								</ul>
 							</div>
 						<?php endif; ?>
+
+						<?php if (\common\models\Branch::findAllBranches() && ($branchPage = \common\models\Page::findPageByRoute(['site/branch']))): ?>
+							<div class="single-item">
+								<div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+								<ul class="info clearfix">
+									<li>
+										<h5><?= Html::encode($branchPage->translation->title ?: Yii::t('common', 'Branches')) ?></h5>
+										<p><?= Html::a(Yii::t('frontend', 'See all branches'), ['/site/branch']) ?></p>
+									</li>
+								</ul>
+							</div>
+						<?php endif; ?>
 						
 						<?php if ($contact['schedule'][Yii::$app->language]): ?>
 							<div class="single-item">

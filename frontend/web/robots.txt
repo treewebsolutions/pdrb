@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Sitemap: https://pdrb.be/sitemap
+Sitemap: https://pdrb.be/en/sitemap
+Sitemap: https://pdrb.be/fr/sitemap
+Sitemap: https://pdrb.be/nl/sitemap

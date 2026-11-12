@@ -1,0 +1,12 @@
+<?php
+/**
+ * Translation map for de-DE
+ */
+return [
+	'Archive' => 'Archiv',
+	'Category' => 'Kategorie',
+	'Tag' => 'Etikett',
+    'Brand' => 'Marke',
+    'Series' => 'Serie',
+    'Delivery' => 'Lieferung',
+];

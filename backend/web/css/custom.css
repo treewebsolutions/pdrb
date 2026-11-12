@@ -1,0 +1,45 @@
+.dt-scroll-x {
+	width: 100%;
+	overflow-x: auto;
+}
+
+.dataTables_scrollBody {
+	max-height: 2000px !important;
+}
+
+.alert-table {
+	display: table;
+	width: 100%;
+}
+.alert-table .row {
+	display: table-row;
+}
+.alert-table .icon, .alert-table .error-summary, .alert-table .close {
+	vertical-align: top !important;
+	display: table-cell;
+	padding: 0;
+	border: 0;
+}
+.alert-table .icon {
+	font-size: 18px;
+	width: 30px;
+}
+.alert-table .close {
+	width: 10px;
+	padding: 0 15px 0 0;
+	opacity: 0.5;
+}
+.alert-table .error-summary p {
+	margin: 0;
+}
+.alert-table .error-summary ul {
+	list-style: none;
+	padding: 0;
+}
+
+/* Limit select dropdown height with scroll */
+select.form-control option {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
